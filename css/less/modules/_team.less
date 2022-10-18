@@ -1,0 +1,107 @@
+/*====================================
+=            Team section            =
+====================================*/
+
+.custom-team-column {
+	@media screen and (max-width: 1000px) {
+		width: 50%;
+	}
+	@media screen and (max-width: 550px) {
+		width: 100%;
+	}
+}
+
+.custom-row {
+	max-width: 100%;
+	padding: 0 20px;
+}
+
+.team-item-block {
+	width: 100%;
+}
+
+.team-wrapper {
+	overflow: hidden;
+	padding-bottom: 0;
+
+	.custom-row {
+		padding: 0;
+	}
+}
+
+.team-item {
+	max-width: 100%;
+	width: 100%;
+	padding-top: 100%;
+	z-index: 1;
+	position: relative;
+	letter-spacing: normal;
+
+	.team-info-block, .image-block {
+		-webkit-transition: -webkit-transform .4s;
+		   -moz-transition: -moz-transform .4s;
+		    -ms-transition: -ms-transform .4s;
+		     -o-transition: -o-transform .4s;
+		        transition: transform .4s;
+	}
+
+	.image-block {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		.team-image {
+			width: 100%;
+		}
+	}
+
+	.team-info-block {
+		position: absolute;
+		bottom: 0;
+		left: 0;	
+		width: 100%;
+		padding-left: 35px;
+		padding-bottom: 11px;
+		padding-top: 13px;
+		color: #fff;
+		-webkit-transform: translateY(100%);
+		   -moz-transform: translateY(100%);
+		    -ms-transform: translateY(100%);
+		     -o-transform: translateY(100%);
+		        transform: translateY(100%);
+
+		.member-name {
+			font-size: 20px;
+			line-height: 24px;
+			font-family: @font3;
+			font-weight: 400;
+			margin-bottom: 8px;
+		}
+
+		.member-post {
+			z-index: 2;
+			font-size: 14px;
+			line-height: 18px;
+		}
+	}
+
+	&:hover {
+		.team-info-block {
+			-webkit-transform: translateY(0);
+			   -moz-transform: translateY(0);
+			    -ms-transform: translateY(0);
+			     -o-transform: translateY(0);
+			        transform: translateY(0);
+		}
+
+		.image-block {
+			-webkit-transform: translateY(-10%);
+			   -moz-transform: translateY(-10%);
+			    -ms-transform: translateY(-10%);
+			     -o-transform: translateY(-10%);
+			        transform: translateY(-10%);
+		}
+	}
+}

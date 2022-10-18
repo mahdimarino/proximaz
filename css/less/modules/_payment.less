@@ -1,0 +1,60 @@
+/*========================================
+=            Payments Section            =
+========================================*/
+
+.payment-item {
+	position: relative;
+	height: 80px;
+
+
+	.dummy {
+		width: 100%;
+	}
+}
+
+
+.payment-list-block {
+	margin-bottom: 30px;
+}
+
+.payment-logo-block {
+	vertical-align: middle;
+
+	.payment-logo {
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-filter: grayscale(100%);
+		-moz-filter: grayscale(100%);
+		-ms-filter: grayscale(100%);
+		-o-filter: grayscale(100%);
+		filter: grayscale(100%);
+		-webkit-transition: all .25s ease;
+		   -moz-transition: all .25s ease;
+		    -ms-transition: all .25s ease;
+		     -o-transition: all .25s ease;
+		        transition: all .25s ease;
+		-webkit-transform: translateY(-50%) translateX(-50%) translateZ(0);
+		   -moz-transform: translateY(-50%) translateX(-50%) translateZ(0);
+		    -ms-transform: translateY(-50%) translateX(-50%);
+		     -o-transform: translateY(-50%) translateX(-50%) translateZ(0);
+		        transform: translateY(-50%) translateX(-50%) translateZ(0);
+	}
+
+	&:hover {
+
+		.payment-logo {
+			-webkit-filter: grayscale(0%);
+			-moz-filter: grayscale(0%);
+			-ms-filter: grayscale(0%);
+			-o-filter: grayscale(0%);
+			filter: grayscale(0%);
+		}
+	}
+}
+@media screen and (max-width: 1025px) {
+	.payment-item {
+		margin-bottom: 20px;
+	}
+}

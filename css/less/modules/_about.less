@@ -1,0 +1,188 @@
+/*========================================
+=            About us section            =
+========================================*/
+.about-section {
+	box-shadow: 0 0 9px rgba(162,162,162,0.5);
+	position: relative;
+	z-index: 5;
+}
+
+
+.about-wrapper {
+
+}
+
+.about-us-container {
+	padding: 40px;
+	margin: 30px 0;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow:    0px 0px 30px 0px rgba(0, 0, 0, 0.75);
+	box-shadow:         0px 0px 30px 0px rgba(0, 0, 0, 0.75);
+
+	@media screen and (max-width: 430px) {
+		padding: 40px 20px;
+	}
+
+}
+
+.section-icon-block {
+
+	.section-icon {
+		width: 100%;
+		max-width: 218px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.section-icon-block {
+		margin-bottom: 20px;
+	}
+}
+
+.general-fact {
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 24px;
+	color: #666;
+}
+
+.about-us-content {
+	padding-bottom: 30px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #b8b8b8;
+}
+
+
+
+/*==========  Grid Facts  ==========*/
+
+.section-facts-block {
+	letter-spacing: -4px;
+	font-size: 0;
+	margin-bottom: 33px;
+	text-align: center;
+
+	@media screen and (max-width: 870px) {
+		padding: 0;
+	}
+}
+
+@-webkit-keyframes iconBlink {
+	to { left: 120%; }
+}
+@-moz-keyframes iconBlink {
+	to { left: 120%; }
+}
+@-ms-keyframes iconBlink {
+	to { left: 120%; }
+}
+@-o-keyframes iconBlink {
+	to { left: 120%; }
+}
+@keyframes iconBlink {
+	to { left: 120%; }
+}
+
+.fact-item-block {
+	width: 25%;
+	letter-spacing: normal;
+	padding: 0 10px;
+
+	@media screen and (max-width: 640px) {
+		width: 50%;
+	}
+
+	@media screen and (max-width: 430px) {
+		width: 100%;
+	}
+
+	&:hover {
+		.icon-block:after {
+			-webkit-animation: iconBlink .7s cubic-bezier(0.77, 0, 0.175, 1) 1;
+			   -moz-animation: iconBlink .7s cubic-bezier(0.77, 0, 0.175, 1) 1;
+			    -ms-animation: iconBlink .7s cubic-bezier(0.77, 0, 0.175, 1) 1;
+			     -o-animation: iconBlink .7s cubic-bezier(0.77, 0, 0.175, 1) 1;
+			        animation: iconBlink .7s cubic-bezier(0.77, 0, 0.175, 1) 1;
+		}
+	}
+
+	.icon-block {
+		position: relative;
+		margin-bottom: 32px;
+		overflow: hidden; 
+
+		&:after {
+			display: block;
+			content: '';
+			position: absolute;
+			height: 81px;
+			width: 23px;
+			background: url(../img/icon-h.png) no-repeat;
+			top: 50%;
+			margin-top: -40px;
+			left: -40px;
+			-webkit-transform: rotate(45deg);
+			   -moz-transform: rotate(45deg);
+			    -ms-transform: rotate(45deg);
+			     -o-transform: rotate(45deg);
+			        transform: rotate(45deg);
+		}
+
+		.fa{
+			font-size: 54px;
+		}
+
+		// .icon {
+		// 	background: url(../img/sprite.png) no-repeat;
+		// 	position: absolute;
+		// 	top: 50%;
+		// 	left: 50%;
+		// 	-webkit-transform: translate3D(-50%, -50%, 0);
+		// 	   -moz-transform: translate3D(-50%, -50%, 0);
+		// 	    -ms-transform: translate3D(-50%, -50%, 0);
+		// 	     -o-transform: translate3D(-50%, -50%, 0);
+		// 	        transform: translate3D(-50%, -50%, 0);
+		// }
+
+		.item1 {
+			background-position: 0 0;
+			width: 38px;
+			height: 57px;
+		}
+
+		.item2 {
+			background-position: -100px 0;
+			width: 50px;
+			height: 50px;
+			margin-left: 3px;
+		}
+
+		.item3 {
+			background-position: -43px 0;
+			width: 50px;
+			height: 46px;
+		}
+	}
+
+	.fact-title {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 30px;
+		color: #222;
+		position: relative;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+
+		&:after {
+			display: block;
+			content: '';
+			position: absolute;
+			width: 36px;
+			height: 3px;
+			bottom: 0;
+			left: 50%;
+			margin-left: -18px;
+		}
+	}
+}

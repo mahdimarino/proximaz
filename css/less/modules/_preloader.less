@@ -1,0 +1,173 @@
+.preloader-block {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 99999;
+	background-color: #fff;
+}
+
+
+.preloader-container {
+	width: 77px;
+	height: 80px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateY(-50%) translateX(-50%) translateZ(0);
+	   -moz-transform: translateY(-50%) translateX(-50%) translateZ(0);
+	    -ms-transform: translateY(-50%) translateX(-50%);
+	     -o-transform: translateY(-50%) translateX(-50%) translateZ(0);
+	        transform: translateY(-50%) translateX(-50%) translateZ(0);
+}
+
+.preloader-icon {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	overflow: hidden;
+
+	&:after {
+		display: block;
+		content: '';
+		position: absolute;
+		top: 43px;
+		left: -21px;
+		background-color: #fff;
+		width: 100%;
+		height: 100%;
+		z-index: 2;
+		transform: rotate(35deg);
+	}
+
+	&:before {
+		display: block;
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: #fff;
+		width: 100%;
+		height: 100%;
+		z-index: 3;
+		background: url(../img/preloader/pepper.png) no-repeat;
+		background-size: 100%;
+	}
+}
+
+.mist-block	{
+	width: 80px;
+	height: 590px;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	-webkit-transform: translateY(-50%) translateZ(0);
+	   -moz-transform: translateY(-50%) translateZ(0);
+	    -ms-transform: translateY(-50%);
+	     -o-transform: translateY(-50%) translateZ(0);
+	        transform: translateY(-50%) translateZ(0);
+	margin-left: -40px;
+	z-index: 1;
+	overflow-y: hidden;
+	
+
+	&:after {
+		display: block;
+		content: '';
+		position: absolute;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 57%;
+		background-color: #fff;
+		margin-top: 27px;
+	}
+
+	&:before {
+		display: block;
+		content: '';
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 50%;
+
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMzJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+		background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 33%, rgba(255,255,255,0) 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(33%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0)));
+		background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 33%,rgba(255,255,255,0) 100%);
+		background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 33%,rgba(255,255,255,0) 100%);
+		background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 33%,rgba(255,255,255,0) 100%);
+		background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 33%,rgba(255,255,255,0) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+	}
+
+	.mist {
+		opacity: 0.7;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 200%;
+		background: url(../img/preloader/mist.png);
+		background-size: 100%;
+		-webkit-animation: mistUp 7s linear infinite;
+		   -moz-animation: mistUp 7s linear infinite;
+		    -ms-animation: mistUp 7s linear infinite;
+		     -o-animation: mistUp 7s linear infinite;
+		        animation: mistUp 7s linear infinite;
+	}
+}
+
+@-webkit-keyframes mistUp {
+	0% { -webkit-transform: translateY(0); }
+	100% {-webkit-transform: translateY(-50%);}
+}
+@-moz-keyframes mistUp {
+	0% { -moz-transform: translateY(0); }
+	100% {-moz-transform: translateY(-50%);}
+}
+@-ms-keyframes mistUp {
+	0% { -ms-transform: translateY(0); }
+	100% {-ms-transform: translateY(-50%);}
+}
+@-o-keyframes mistUp {
+	0% { -o-transform: translateY(0); }
+	100% {-o-transform: translateY(-50%);}
+}
+@keyframes mistUp {
+	0% { transform: translateY(0); }
+	100% {transform: translateY(-50%);}
+}
+
+// Fog part
+.fog-item {
+	position: fixed;
+	z-index: 99;
+	opacity: .8;
+
+	&.fog-left-top {
+		left: -10%;
+		top: -5%;
+	}
+	&.fog-left-bottom {
+		left: 0%;
+		top: 40%;
+	}
+	&.fog-right-bottom {
+		right: -10%;
+		top: 30%;
+	}
+	&.fog-right-top {
+		right: 0;
+		top: -20%;
+	}
+}

@@ -1,0 +1,70 @@
+/*======================================
+=            Footer section            =
+======================================*/
+
+.footer-wrapper {
+	background-color: #fff;
+	padding: 35px 0;
+
+	.copyright {
+		font-size: 14px;
+		line-height: 24px;
+		color: #7f7f7e;
+		font-weight: 300;
+		text-align: center;
+	}
+}
+
+.socials-list {
+	text-align: right;
+	letter-spacing: 16px;
+}
+
+.social-item {
+
+	.social-icon {
+		background: url(../img/sprite.png) no-repeat;
+		display: inline-block;
+		vertical-align: middle;
+		zoom: 1; /* Fix for IE7 */
+		*display: inline; /* Fix for IE7 */
+		line-height: 24px;
+	}
+
+	&.facebook .social-icon{
+		background-position: -18px -68px;
+		width: 7px;
+		height: 16px;
+	}
+	&.google-plus .social-icon{
+		background-position: 0 -70px;
+		width: 15px;
+		height: 16px;
+	}
+	&.twitter .social-icon{
+		background-position: -69px -70px;
+		width: 15px;
+		height: 12px;
+	}
+	&.linkedin .social-icon{
+		background-position: -50px -68px;
+		width: 14px;
+		height: 14px;
+	}
+	&.some .social-icon{
+		background-position: -32px -68px;
+		width: 14px;
+		height: 15px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.footer-wrapper {
+		text-align: center;
+	}
+
+	.socials-list {
+		text-align: center;
+		margin-top: 10px;
+	}
+}

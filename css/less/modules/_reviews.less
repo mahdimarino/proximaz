@@ -1,0 +1,196 @@
+/*========================================
+=            Reviews section            =
+========================================*/
+
+.feedback-wrapper {
+	padding-bottom: 3px;
+	overflow: hidden;
+	
+	.section-title-block {
+		margin-bottom: 73px;
+	}
+}
+
+.auth-img {
+	width: 220px;
+	opacity: .35s;
+	overflow: hidden;
+	border: 3px solid #dedede;
+}
+
+.auth-name {
+	font-size: 18px;
+	line-height: 30px;
+	color: #222;
+
+	margin-top: 10px;
+}
+
+.item-testim {
+	display: none;
+}
+
+.item-body {
+	position: relative;
+	margin-top: 20px;
+	padding: 30px 100px;
+	background-color: #f3f3f3;
+	-webkit-transition: height .25s ease;
+	   -moz-transition: height .25s ease;
+	    -ms-transition: height .25s ease;
+	     -o-transition: height .25s ease;
+	        transition: height .25s ease;
+
+	&:after {
+		position: absolute;
+		display: block;
+		content: '';
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 10px 10px 10px;
+		border-color: transparent transparent #f3f3f3 transparent;
+		top: -10px;
+		left: 50%;
+		margin-left: -10px;
+	}
+
+	.testim {
+		font-size: 14px;
+		color: #666;
+		line-height: 24px;
+	}
+}
+
+.testimonial-item {
+	-webkit-transition: -webkit-transform .5s ease;
+	   -moz-transition: -moz-transform .5s ease;
+	    -ms-transition: -ms-transform .5s ease;
+	     -o-transition: -o-transform .5s ease;
+	        transition: transform .5s ease;
+}
+
+.testimonials-images-list {
+	width: 690px;
+	max-width: 100%;
+	margin: 0 auto;
+
+	.owl-item {
+		opacity: .35;
+		-webkit-transition: -webkit-transform .5s ease, opacity .5s ease;
+		   -moz-transition: -moz-transform .5s ease, opacity .5s ease;
+		    -ms-transition: -ms-transform .5s ease, opacity .5s ease;
+		     -o-transition: -o-transform .5s ease, opacity .5s ease;
+		        transition: transform .5s ease, opacity .5s ease;
+		-webkit-transform: scale(.68) translateZ(0);
+		   -moz-transform: scale(.68) translateZ(0);
+		    -ms-transform: scale(.68);
+		     -o-transform: scale(.68) translateZ(0);
+		        transform: scale(.68) translateZ(0);
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
+		-o-backface-visibility: hidden;
+		backface-visibility: hidden;
+	}
+
+	.owl-item.center {
+		z-index: 3;
+		opacity: 1;
+		-webkit-transform: scale(1) translateZ(0);
+		   -moz-transform: scale(1) translateZ(0);
+		    -ms-transform: scale(1);
+		     -o-transform: scale(1) translateZ(0);
+		        transform: scale(1) translateZ(0);
+	}
+
+	.owl-next, .owl-prev {
+		font-size: 35px;
+		z-index: 4;
+		position: absolute;
+		top: 50px;
+		left: 50%;
+		width: 150px;
+		height: 184px;
+		-webkit-transform: translateX(-50%);
+		   -moz-transform: translateX(-50%);
+		    -ms-transform: translateX(-50%);
+		     -o-transform: translateX(-50%);
+		        transform: translateX(-50%);
+
+		&:before {
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translateX(-50%) translateY(-50%);
+			   -moz-transform: translateX(-50%) translateY(-50%);
+			    -ms-transform: translateX(-50%) translateY(-50%);
+			     -o-transform: translateX(-50%) translateY(-50%);
+			        transform: translateX(-50%) translateY(-50%);
+		}
+	}
+
+	.owl-next {
+		margin-left: 231px;
+	}
+
+	.owl-prev {
+		margin-left: -231px;
+	}
+}
+
+.js-testim-content {
+	display: none;
+}
+
+@media screen and (max-width: 900px) {
+	.item-body {
+		padding: 30px;
+	}
+}
+
+@media screen and (max-width: 534px) {
+	.testimonials-images-list {
+
+		.owl-next, .owl-prev {
+			margin-top: -21px;
+			height: auto;
+			width: auto;
+			top: 50%;
+			-webkit-transform: translateX(-50%) translateY(-50%);
+			   -moz-transform: translateX(-50%) translateY(-50%);
+			    -ms-transform: translateX(-50%) translateY(-50%);
+			     -o-transform: translateX(-50%) translateY(-50%);
+			        transform: translateX(-50%) translateY(-50%);
+
+			&:before {
+				position: static;
+				-webkit-transform: none;
+				   -moz-transform: none;
+				    -ms-transform: none;
+				     -o-transform: none;
+				        transform: none;
+			}
+		}
+
+		.owl-prev {
+			margin-left: -135px;
+		}
+
+		.owl-next {
+			margin-left: 135px;
+		}
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.item-body {
+		padding: 15px;
+
+		.testim {
+			font-size: 13px;
+			line-height: 2;
+		}
+	}
+}

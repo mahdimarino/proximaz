@@ -1,0 +1,226 @@
+/*=======================================
+=            Theme variables            =
+=======================================*/
+
+@font1: 'Fira Sans', sans-serif;
+@font3: 'Droid Serif', serif;
+
+.currency {
+	font-family: @font1;
+}
+
+
+
+/*=====================================
+=            Theme classes            =
+=====================================*/
+
+.t-dark-noise {
+	background: url(../img/dark-noise.jpg);
+}
+.t-light-noise {
+	background: url(../img/light-noise.jpg);
+}
+
+.t-gray-bg {
+    background: url(../img/gray_jean.png);
+}
+
+.t-block-shdw {
+	-webkit-box-shadow: 0px 0px 12px 0px rgba(147, 147, 147, 0.75);
+	-moz-box-shadow:    0px 0px 12px 0px rgba(147, 147, 147, 0.75);
+	box-shadow:         0px 0px 12px 0px rgba(147, 147, 147, 0.75);
+}
+
+.t-fw-l {
+	font-weight: 300;
+}
+.t-fw-b {
+	font-weight: 700;
+}
+.t-fw-n {
+	font-weight: 400;
+}
+
+.bg-fx {
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+
+	& > .row { position: relative; }
+	
+	.fixed-background {
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		top: 0px;
+		position: fixed;
+		pointer-events: none;
+		background-size: 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		-webkit-transform: translateZ(0);
+		   -moz-transform: translateZ(0);
+		     -o-transform: translateZ(0);
+		        transform: translateZ(0);
+	}
+}
+
+/*====================================
+=            Button style            =
+====================================*/
+.theme-btn{
+	height: 40px;
+	line-height: 41px;
+	color: #fff;
+	font-size: 15px;
+	text-align: center;
+	display: inline-block;
+	padding: 0 30px;
+	cursor: pointer;
+	position: relative;
+	z-index: 1;
+
+	-webkit-transition: box-shadow .25s ease;
+	   -moz-transition: box-shadow .25s ease;
+	    -ms-transition: box-shadow .25s ease;
+	     -o-transition: box-shadow .25s ease;
+	        transition: box-shadow .25s ease;
+
+	&:after {
+		display: block;
+		content: '';
+		position: absolute;
+		top: -4px;
+		left: -4px;
+		width: 100%;
+		height: 100%;
+		border: 2px solid #fff;
+		padding: 2px;
+		box-sizing: content-box;
+	}
+
+	&:hover {
+		box-shadow: none !important;
+	}
+}
+/*-----  End of Button style  ------*/
+
+
+
+
+
+/*===========================================
+=            Section title style            =
+===========================================*/
+
+.section-title-block {
+	text-align: center;
+	margin-bottom: 80px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	.section-title {
+		font-size: 30px;
+		font-weight: 400;
+		color: #222;
+		position: relative;
+		padding: 0 20px;
+		line-height: 39px;
+		display: inline-block;
+		vertical-align: top;
+		zoom: 1; /* Fix for IE7 */
+		*display: inline; /* Fix for IE7 */
+		font-family: @font3;
+		margin-bottom: 10px;
+
+		&:after, &:before {
+			display: block;
+			content: '';
+			position: absolute;
+			background: url(../img/logoSprite.png) no-repeat;
+			width: 100px;
+			height: 24px;
+			top: 10px;
+		}
+
+
+		&:before {
+			left: -95px;
+			background-position: 0 0;
+		}
+
+		&:after {
+			right: -95px;
+			background-position: 0 -25px;
+		}
+		
+		@media screen and (max-width: 700px) {
+
+			&:after, &:before {
+				-webkit-transform: scale(0.75);
+				   -moz-transform: scale(0.75);
+				    -ms-transform: scale(0.75);
+				     -o-transform: scale(0.75);
+				        transform: scale(0.75);
+			}
+
+			&:before {
+				left: -151px;
+			}
+
+			&:after {
+				right: -151px;
+			}
+		}
+
+		@media screen and (max-width: 615px) {
+			&:after, &:before {
+				display: none;
+			}
+		}
+
+	}
+
+	.section-subtitle{
+		font-size: 14px;
+		line-height: 24px;
+		color: #787878;
+	}
+
+	
+
+	/*==========  Light title version  ==========*/
+	
+	&.t-light-title {
+
+		.section-title {
+			color: #fff;
+
+			&:before {
+				left: -95px;
+				background-position: 0 -78px;
+			}
+
+			&:after {
+				right: -95px;
+				background-position: 0 -51px;
+			}
+		}
+		.section-subtitle {
+			color: #d1d1d1;
+		}
+	}
+}
+@media screen and (max-width: 615px) {
+	.section-title-block{
+		margin-bottom: 50px;
+	}
+}
+
+.simple-text{
+	font-size: 14px;
+	color: #363636;
+	line-height: 24px;
+}
+

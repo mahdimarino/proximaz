@@ -1,0 +1,81 @@
+/*===========================================
+=            Ingredients section            =
+===========================================*/
+
+.ingredients-wrapper {
+	overflow: hidden;
+	position: relative;
+
+	.fixed-background {
+		background-image: url(../img/ingredients-bg.jpg);
+	}
+}
+
+.ingredients-description{
+	background-color: #fff;
+	max-width: 400px;
+	padding: 10px;
+}
+.ingredients-dashed {
+	border: 1px dashed #dadada;
+	padding: 30px;
+
+	.simple-text{
+		margin-bottom: 30px;
+
+		&.last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+.ingredients-slider {
+	padding: 10px;
+	background-color: #fff;
+	max-width: 460px;
+	margin: 0 auto;
+
+	.ingredients-dashed{
+		padding: 30px 40px;
+
+	}
+	
+	.owl-carousel {
+		.owl-controls {
+			.owl-nav {
+				position: relative;
+
+				div{
+					background-repeat: no-repeat;
+					position: absolute;
+					top: -11px;
+					display: block !important;
+					font-size: 26px;
+					color: #939393;
+				}
+
+				.owl-prev{
+					left: 50%;
+					margin-left: -30px;
+				}
+				.owl-next{
+					right: 50%;
+					margin-right: -30px;
+				}
+			}
+		}
+	}
+
+}
+.ingredients-img {
+	display: block;
+	margin-bottom: 25px;
+}
+@media screen and (max-width: 980px) {
+	.ingredients-column{
+		width: 100% !important;
+	}
+
+	.ingredients-description{
+		margin: 0 auto 40px;
+	}
+}
